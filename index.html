@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NFL ROSTER</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 panel nfl-panel">
+                <center>
+                    <img class="nfl-logo" src="http://videos.company3.com/2016/09/Logo-NFL.png" alt="">
+                    <h4 class="fantasy-fball-text">Fantasy Football</h4>
+                    <label name="team-name">Team Name</label><input name="team-name">
+                    <label name="position">Position</label><input name="position" value="QB">
+                    <label name="player-name">Player Name</label><input name="player-name"> 
+                    <button onclick="app.controllers.playerController.filterSearch();" type= "button submit" class="btn btn-primary" type="submit">Search</button>
+                </center>
+            </div>
+
+            <div class="row background-color">
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+
+                    <h2 class="players-text">Players</h2>
+                    <div class="row" id="display-players">
+                        <!-- <div class="col-xs-4 col-sm-4 col-md-4">
+                            <div class="panel">
+                                <center>
+                                    <h3 class="name-text">${player.fullname}</h3><img class="player-photo" src=${player.photo}>
+                                    <h3 class="position-text">Position: ${player.position}<br><button onclick="app.controllers.playerController.addPlayer(${player})">Add</button>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 panel">
+                    <center>
+                        <h2 class="my-roster-text">My Roster</h2>
+                        <div id="my-roster">
+
+                        </div>
+                    </center>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="service.js"></script>
+    <script src="controller.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

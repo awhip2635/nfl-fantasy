@@ -1,0 +1,42 @@
+.nfl-logo {
+    width: 15%;
+    height: 15%;
+    
+}
+
+.players-text {
+
+    text-align: center;
+    color: white;
+    font-family: 'Acme', sans-serif;
+}
+
+.nfl-panel {
+    background-color: lightblue;
+}
+.my-roster-text {
+    text-align: center;
+    color: black;
+    font-family: 'Acme', sans-serif;
+}
+
+.player-photo {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.name-text {
+    font-size: 12px;
+}
+
+.position-text {
+    font-size: 12px;
+}
+
+.background-color {
+    background-color: cornflowerblue;
+}
+
+.panel-roster {
+    background-color: greenyellow;
+}
