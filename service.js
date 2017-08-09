@@ -59,7 +59,7 @@ var PlayersService = function (endpointUri, callback) {
             //this will prevent the code below from ever executing
         }
 
-        var url = "http://bcw-getter.herokuapp.com/?url=";
+        var url = "//bcw-getter.herokuapp.com/?url=";
         var params = {position:playerPosition,pro_team:proTeam,name:playerName,version:"3.0",response_format:"JSON",SPORT:"football"};
         var endpointUri = "http://api.cbssports.com/fantasy/players/search?"+$.param(params);
         var apiUrl = url + encodeURIComponent(endpointUri);
