@@ -8,7 +8,7 @@ function PlayerController() {
             var arr = service.getNFL();
             for (var i = 0; i < arr.length; i++) {
                 var player = arr[i];
-                template += `<div class="col-xs-4 col-sm-4 col-md-4"><div class="panel"><center><h3 class="name-text">${player.fullname}</h3><img class="player-photo" src =${player.photo}><h3 class="position-text">Position: ${player.position}<br><button onclick="app.controllers.playerController.addPlayer('${player.id}')">Add</button>
+                template += `<div class="col-xs-12 col-sm-12 col-md-4"><div class="panel"><center><h3 class="name-text">${player.fullname}</h3><img class="player-photo" src =${player.photo}><h3 class="position-text">Position: ${player.position}<br><button onclick="app.controllers.playerController.addPlayer('${player.id}')">Add</button>
       </div></div>`;
             }
             document.getElementById('display-players').innerHTML = template;
@@ -28,7 +28,7 @@ function PlayerController() {
         var template = '';
 
         roster.forEach(player => {
-            template += `<div class="panel panel-roster"><center>${player.fullname} ${player.position} ${player.pro_team}<br></center><button onclick="app.controllers.playerController.removePlayer('${player.id}')" class="button btn btn-block">Remove From Team</button></div>`
+            template += `<div class="panel panel-roster">${player.fullname} ${player.position} ${player.pro_team}<br><button onclick="app.controllers.playerController.removePlayer('${player.id}')" class="button btn btn-block">Remove</button></div></div>`
         })
 
         document.getElementById('my-roster').innerHTML = template;

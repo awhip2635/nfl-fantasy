@@ -35,8 +35,16 @@
 
 .background-color {
     background-color: cornflowerblue;
+    height: 100%;
 }
 
 .panel-roster {
     background-color: greenyellow;
+}
+.container-fluid {
+    background-color: cornflowerblue;
+}
+.panel {
+   
+
 }

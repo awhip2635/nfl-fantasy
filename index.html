@@ -19,19 +19,28 @@
                 <center>
                     <img class="nfl-logo" src="http://videos.company3.com/2016/09/Logo-NFL.png" alt="">
                     <h4 class="fantasy-fball-text">Fantasy Football</h4>
-                    <label name="team-name">Team Name</label><input name="team-name" value="NE">
-                    <label name="position">Position</label><input name="position" value="QB">
-                    <label name="player-name">Player Name</label><input name="player-name" value="Brady"> 
-                    <button onclick="app.controllers.playerController.filterSearch();" type= "button submit" class="btn btn-primary" type="submit">Search</button>
+                    <label name="team-name">Team Name</label><center>
+                        <input name="team-name" value="NE"><br>
+                        </center>
+                    <label name="position">Position</label>
+                    <center>
+                        <input name="position"><br>
+
+                    </center>
+                    <label name="player-name">Player Name</label><center>
+                        <input name="player-name"><br>
+                        </center>
+                    <button onclick="app.controllers.playerController.filterSearch();" type="button submit" class="btn btn-primary" type="submit">Search</button>
                 </center>
             </div>
+        </div>
 
-            <div class="row background-color">
-                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+        <div class="row background-color">
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
 
-                    <h2 class="players-text">Players</h2>
-                    <div class="row" id="display-players">
-                        <!-- <div class="col-xs-4 col-sm-4 col-md-4">
+                <h2 class="players-text">Players</h2>
+                <div class="row" id="display-players">
+                    <!-- <div class="col-xs-4 col-sm-4 col-md-4">
                             <div class="panel">
                                 <center>
                                     <h3 class="name-text">${player.fullname}</h3><img class="player-photo" src=${player.photo}>
@@ -39,23 +48,22 @@
                             </div>
                         </div> -->
 
-                    </div>
-
                 </div>
 
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 panel">
-                    <center>
-                        <h2 class="my-roster-text">My Roster</h2>
-                        <div id="my-roster">
-
-                        </div>
-                    </center>
-                </div>
             </div>
 
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 panel">
+                <center>
+                    <h2 class="my-roster-text">My Roster</h2>
+                    <div id="my-roster">
 
-
+                    </div>
+                </center>
+            </div>
         </div>
+
+
+
 
 
 
