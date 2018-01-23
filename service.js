@@ -7,6 +7,10 @@ var PlayersService = function (endpointUri, callback) {
     }
     this.getPlayersByTeam = function (teamName) {
         var thisPlayer = playersData.filter(function (player) {
+            console.log("got this far");
+            if(teamName == "DET"||"det"||"lions" ){
+        teamName = "DET"
+            }
             if (player.pro_team == teamName) {
                 return player;
             }
@@ -68,13 +72,13 @@ var PlayersService = function (endpointUri, callback) {
             localStorage.setItem('playersData', JSON.stringify(playersData));
             localStorage.setItem('updatedData', true);
         });
-             
+           console.log(playersData);  
     }
 
     this.addPlayer = function (player) {
         var tooMany = false;
-        if (myRoster.length >=9){
-            alert('You already have 9 players');
+        if (myRoster.length >=11){
+            alert('You already have 11 players');
             tooMany= true;
         }
         if (!tooMany && (myRoster.indexOf(player) == -1)) {
