@@ -19,7 +19,7 @@ var PlayersService = function (endpointUri, callback) {
     }
     this.getPlayersByPosition = function (position) {
         var thisPlayer = playersData.filter(function (player) {
-            if (player.position == position) {
+            if (player.position == position.value) {
                 return player;
             }
         });

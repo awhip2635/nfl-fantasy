@@ -19,17 +19,24 @@
                 <center>
                     <img class="nfl-logo" src="http://videos.company3.com/2016/09/Logo-NFL.png" alt="">
                     <h4 class="fantasy-fball-text">Fantasy Football</h4>
-                    <label name="team-name">Team Name</label><center>
-                        <input name="team-name" value="NE"><br>
-                        </center>
-                    <label name="position">Position</label>
+                    <label name="team-name">Team Name</label>
                     <center>
-                        <input name="position"><br>
+                        <input name="team-name" value="NE"><br>
+                    </center>
+                    <h5 name = "position">Position</h5>
+                    <center>
+                        <select name = "position">
+                            <option name="position" value="QB">QB</option>
+                            <option name= "position" value="WR">WR</option>
+                            <option name = "position" value="RB">RB</option>
+                            <option name = "position" value="TE">TE</option>
+                        </select>
 
                     </center>
-                    <label name="player-name">Player Name</label><center>
+                    <label name="player-name">Player Name</label>
+                    <center>
                         <input name="player-name"><br>
-                        </center>
+                    </center>
                     <button onclick="app.controllers.playerController.filterSearch();" type="button submit" class="btn btn-primary" type="submit">Search</button>
                 </center>
             </div>
